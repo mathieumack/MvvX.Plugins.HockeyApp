@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.HockeyApp;
+using System;
 using System.Windows;
 
 namespace Client.Windows
@@ -8,6 +9,8 @@ namespace Client.Windows
     /// </summary>
     public partial class MainWindow : Window
     {
+        int i = 0;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -15,6 +18,7 @@ namespace Client.Windows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            i++;
             App.hockeyClient.TrackEvent("Wpf Button_Click");
         }
 

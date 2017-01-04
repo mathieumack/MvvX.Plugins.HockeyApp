@@ -1,6 +1,6 @@
 ﻿{
   "dependencies": {
-    "HockeySDK.Core": "4.1.4",
+    "HockeySDK.Core": "4.1.5",
     "HockeySDK.UWP": "4.1.4",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "MvvmCross.Platform": "4.2.3"

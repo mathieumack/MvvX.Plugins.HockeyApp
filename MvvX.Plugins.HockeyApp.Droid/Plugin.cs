@@ -7,7 +7,7 @@ namespace MvvX.Plugins.HockeyApp.Droid
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IHockeyClient>(new HockeyClientDroid());
+            Mvx.RegisterSingleton<IHockeyClient>(new HockeyClientDroid(null, null));
         }
     }
 }

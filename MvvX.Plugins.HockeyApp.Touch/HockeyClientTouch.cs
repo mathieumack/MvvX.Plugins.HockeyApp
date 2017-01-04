@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using HockeyApp.iOS;
 
 namespace MvvX.Plugins.HockeyApp.Touch
 {
     public class HockeyClientTouch : IHockeyClient
     {
-        public void Configure(string identifier, bool activateMetrics, bool activateCrashReports)
+        public void Configure(string identifier, string version, bool activateTelemetry, bool activateMetrics, bool activateCrashReports)
         {
             var manager = BITHockeyManager.SharedHockeyManager;
             manager.Configure(identifier);
@@ -16,6 +17,11 @@ namespace MvvX.Plugins.HockeyApp.Touch
         }
 
         public void Flush()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task SendCrashesAsync()
         {
             throw new NotImplementedException();
         }

@@ -20,9 +20,9 @@ namespace Client.Windows
         {
             base.OnStartup(e);
             App.hockeyClient = new HockeyClientWpf();
-            App.hockeyClient.Configure("d4f10c8b3fdd46a19382a5f4c103f229", true, true);
-
-            App.hockeyClient.TrackEvent("Start application");
+            App.hockeyClient.Configure("$APIKey here", "1.0.0.0", true, true, true);
+            
+            App.hockeyClient.TrackEvent("Start application from HockeyApp");
 
             //send crashes to the HockeyApp server 
             await App.hockeyClient.SendCrashesAsync();

@@ -4,6 +4,7 @@ using HockeyApp.Android;
 using HockeyApp.Android.Metrics;
 using Android.App;
 using Android.Content;
+using System.Threading.Tasks;
 
 namespace MvvX.Plugins.HockeyApp.Droid
 {
@@ -29,7 +30,7 @@ namespace MvvX.Plugins.HockeyApp.Droid
         private string identifier = null;
         private bool isConfigured = false;
 
-        public void Configure(string identifier, bool activateMetrics, bool activateCrashReports)
+        public void Configure(string identifier, string version, bool activateTelemetry, bool activateMetrics, bool activateCrashReports)
         {
             this.identifier = identifier;
             if(activateCrashReports)
@@ -90,6 +91,11 @@ namespace MvvX.Plugins.HockeyApp.Droid
         }
 
         public void TrackTrace(string message, SeverityLevel severityLevel, IDictionary<string, string> properties)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task SendCrashesAsync()
         {
             throw new NotImplementedException();
         }

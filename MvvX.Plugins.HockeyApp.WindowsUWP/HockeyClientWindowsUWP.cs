@@ -1,26 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.HockeyApp;
 using System.Threading.Tasks;
+using Microsoft.HockeyApp;
 
-namespace MvvX.Plugins.HockeyApp.Wpf
+namespace MvvX.Plugins.HockeyApp.WindowsUWP
 {
-    public class HockeyClientWpf : IHockeyClient
+    public class HockeyClientWindowsUWP : IHockeyClient
     {
         private bool activateMetrics;
         private bool activateCrashReports;
 
-        public void Configure(string identifier, bool activateMetrics, bool activateCrashReports)
+        public void Configure(string identifier, string version, bool activateTelemetry, bool activateMetrics, bool activateCrashReports)
         {
             HockeyClient.Current.Configure(identifier);
-            
             this.activateMetrics = activateMetrics;
             this.activateCrashReports = activateCrashReports;
-        }
-
-        public async Task SendCrashesAsync()
-        {
-            await HockeyClient.Current.SendCrashesAsync();
         }
 
         public void Flush()
@@ -41,13 +35,13 @@ namespace MvvX.Plugins.HockeyApp.Wpf
 
         public void TrackException(Exception ex, IDictionary<string, string> properties = null)
         {
-            if (activateCrashReports)
+            if(activateCrashReports)
                 HockeyClient.Current.TrackException(ex, properties);
         }
 
         public void TrackMetric(string name, double value, IDictionary<string, string> properties = null)
         {
-            if (activateMetrics)
+            if(activateMetrics)
                 HockeyClient.Current.TrackMetric(name, value, properties);
         }
 
@@ -74,6 +68,11 @@ namespace MvvX.Plugins.HockeyApp.Wpf
         public void TrackTrace(string message, SeverityLevel severityLevel, IDictionary<string, string> properties)
         {
             HockeyClient.Current.TrackTrace(message, (Microsoft.HockeyApp.SeverityLevel)(int)severityLevel, properties);
+        }
+
+        public async Task SendCrashesAsync()
+        {
+            throw new NotImplementedException();
         }
     }
 }

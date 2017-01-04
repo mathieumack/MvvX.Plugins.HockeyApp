@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>NoSqlRepositories.Core</id>
+        <version>{BuildNumberVersion}</version>
+        <title>NoSqlRepository</title>
+        <authors>MACK Mathieu,alexandrebalan</authors>
+        <owners>MACK Mathieu,alexandrebalan</owners>
+        <licenseUrl>https://github.com/mathieumack/NoSqlRepositories</licenseUrl>
+        <projectUrl>https://github.com/mathieumack/NoSqlRepositories</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>This package contains the core content of NoSqlRepository</description>
+        <tags>nosql repository</tags>
+        <dependencies>
+          <group>
+        </group>
+        </dependencies>  
+    </metadata>
+    <files>     
+        <!-- ALL -->
+        <file src="..\NoSqlRepositories.Core\bin\Release\NoSqlRepositories.Core.XML" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch" />
+        <file src="..\NoSqlRepositories.Core\bin\Release\NoSqlRepositories.Core.dll" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch" />
+    </files>
+</package>

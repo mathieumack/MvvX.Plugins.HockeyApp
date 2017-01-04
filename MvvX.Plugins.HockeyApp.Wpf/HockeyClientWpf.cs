@@ -1,20 +1,51 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.HockeyApp;
+using System.Threading.Tasks;
 
-namespace MvvX.Plugins.HockeyApp.WindowsUWP
+namespace MvvX.Plugins.HockeyApp.Wpf
 {
-    public class HockeyClientWindowsUWP : IHockeyClient
+    public class HockeyClientWpf : IHockeyClient
     {
+        private bool activateTelemetry;
         private bool activateMetrics;
         private bool activateCrashReports;
 
-        public void Configure(string identifier, bool activateMetrics, bool activateCrashReports)
+        public void Configure(string identifier, string version, bool activateTelemetry, bool activateMetrics, bool activateCrashReports)
         {
-            HockeyClient.Current.Configure(identifier);
+            var hockeyClient = (HockeyClient)HockeyClient.Current;
+
+            if (activateTelemetry)
+            {
+                hockeyClient.Configure(identifier)
+                        .RegisterCustomDispatcherUnhandledExceptionLogic(OnUnhandledDispatcherException)
+                        .UnregisterDefaultUnobservedTaskExceptionHandler();
+
+                hockeyClient.IsTelemetryInitialized = true;
+
+                var platformHelper = (HockeyPlatformHelperWPF)hockeyClient.PlatformHelper;
+                platformHelper.AppVersion = version;
+            }
+            else
+            {
+                var platformHelper = (HockeyPlatformHelperWPF)hockeyClient.PlatformHelper;
+                hockeyClient.PlatformHelper = platformHelper;
+                hockeyClient.AppIdentifier = identifier;
+            }
+
+            this.activateTelemetry = activateTelemetry;
             this.activateMetrics = activateMetrics;
             this.activateCrashReports = activateCrashReports;
+        }
+
+        private void OnUnhandledDispatcherException(System.Windows.Threading.DispatcherUnhandledExceptionEventArgs obj)
+        {
+            //throw new NotImplementedException();
+        }
+
+        public async Task SendCrashesAsync()
+        {
+            await HockeyClient.Current.SendCrashesAsync();
         }
 
         public void Flush()
@@ -30,18 +61,19 @@ namespace MvvX.Plugins.HockeyApp.WindowsUWP
 
         public void TrackEvent(string eventName, IDictionary<string, string> properties = null, IDictionary<string, double> metrics = null)
         {
-            HockeyClient.Current.TrackEvent(eventName, properties, metrics);
+            var hockeyClient = (HockeyClient)HockeyClient.Current;
+            hockeyClient.TrackEvent(eventName, properties, metrics);
         }
 
         public void TrackException(Exception ex, IDictionary<string, string> properties = null)
         {
-            if(activateCrashReports)
+            if (activateCrashReports)
                 HockeyClient.Current.TrackException(ex, properties);
         }
 
         public void TrackMetric(string name, double value, IDictionary<string, string> properties = null)
         {
-            if(activateMetrics)
+            if (activateMetrics)
                 HockeyClient.Current.TrackMetric(name, value, properties);
         }
 
@@ -68,11 +100,6 @@ namespace MvvX.Plugins.HockeyApp.WindowsUWP
         public void TrackTrace(string message, SeverityLevel severityLevel, IDictionary<string, string> properties)
         {
             HockeyClient.Current.TrackTrace(message, (Microsoft.HockeyApp.SeverityLevel)(int)severityLevel, properties);
-        }
-
-        public async Task SendCrashesAsync()
-        {
-            throw new NotImplementedException();
         }
     }
 }

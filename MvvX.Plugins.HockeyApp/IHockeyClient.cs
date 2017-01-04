@@ -16,7 +16,7 @@ namespace MvvX.Plugins.HockeyApp
         /// Start configuration of the api with your app identifier
         /// </summary>
         /// <param name="identifier"></param>
-        void Configure(string identifier, bool activateMetrics, bool activateCrashReports);
+        void Configure(string identifier, string version, bool activateTelemetry, bool activateMetrics, bool activateCrashReports);
         void Flush();
         //void TrackDependency(DependencyTelemetry telemetry);
         //void TrackDependency(string dependencyName, string commandName, DateTimeOffset startTime, TimeSpan duration, bool success);
