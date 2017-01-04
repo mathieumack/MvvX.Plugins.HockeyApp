@@ -1,24 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
  <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
-        <id>NoSqlRepositories.Core</id>
+        <id>MvvX.Plugins.HockeyApp</id>
         <version>{BuildNumberVersion}</version>
-        <title>NoSqlRepository</title>
-        <authors>MACK Mathieu,alexandrebalan</authors>
-        <owners>MACK Mathieu,alexandrebalan</owners>
-        <licenseUrl>https://github.com/mathieumack/NoSqlRepositories</licenseUrl>
-        <projectUrl>https://github.com/mathieumack/NoSqlRepositories</projectUrl>
+        <title>HockeyApp mvvmcross plugin</title>
+        <authors>MACK Mathieu</authors>
+        <owners>MACK Mathieu</owners>
+        <licenseUrl>https://github.com/mathieumack/MvvX.Plugins.HockeyApp</licenseUrl>
+        <projectUrl>https://github.com/mathieumack/MvvX.Plugins.HockeyApp</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>This package contains the core content of NoSqlRepository</description>
-        <tags>nosql repository</tags>
+        <description>This package contains the HockeyApp plugin for MvvmCross</description>
+        <tags>mvvmcross plugin hockeyapp</tags>
         <dependencies>
-          <group>
-        </group>
+            <group>
+                <!-- Always include regardless of target framework -->
+                <dependency id="MvvmCross.Platform" version="4.2.2" />
+            </group>
+            <group targetFramework="net45">>
+                <package id="HockeySDK.Core" version="4.1.5" targetFramework="net45" />
+                <package id="HockeySDK.WPF" version="4.1.5" targetFramework="net45" />
+            </group>
+            <group targetFramework="MonoAndroid10">
+                <!-- Always include regardless of target framework -->
+                <dependency id="Couchbase.Lite" version="1.3.0" />
+            </group>
+            <group targetFramework="MonoTouch10">
+                <!-- Always include regardless of target framework -->
+                <dependency id="Couchbase.Lite" version="1.3.0" />
+            </group>
         </dependencies>  
     </metadata>
     <files>     
         <!-- ALL -->
-        <file src="..\NoSqlRepositories.Core\bin\Release\NoSqlRepositories.Core.XML" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch" />
-        <file src="..\NoSqlRepositories.Core\bin\Release\NoSqlRepositories.Core.dll" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+monotouch" />
+
+        <!-- Wpf -->
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\net45" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\net45" />
+        <file src="..\MvvX.Plugins.HockeyApp.Wpf\bin\Release\MvvX.Plugins.HockeyApp.Wpf.dll" target="lib\net45" />
+        <file src="BootstrapContent\HockeyAppPluginBootstrap.cs.cs.pp" target="content\net45\Bootstrap\HockeyAppPluginBootstrap.cs.cs.pp" />
     </files>
 </package>

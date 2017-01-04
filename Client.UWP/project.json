@@ -2,7 +2,7 @@
   "dependencies": {
     "HockeySDK.UWP": "4.1.4",
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "MvvmCross.Platform": "4.2.3"
+    "MvvmCross.Platform": "4.2.2"
   },
   "frameworks": {
     "uap10.0": {}
