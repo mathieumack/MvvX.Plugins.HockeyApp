@@ -31,6 +31,6 @@
         <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\net45" />
         <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\net45" />
         <file src="..\MvvX.Plugins.HockeyApp.Wpf\bin\Release\MvvX.Plugins.HockeyApp.Wpf.dll" target="lib\net45" />
-        <file src="BootstrapContent\HockeyAppPluginBootstrap.cs.cs.pp" target="content\net45\Bootstrap\HockeyAppPluginBootstrap.cs.cs.pp" />
+        <file src="BootstrapContent\HockeyAppPluginBootstrap.cs.pp" target="content\net45\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
     </files>
 </package>
