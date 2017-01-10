@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
@@ -24,6 +24,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.UWP", "Client.UWP\Client.UWP.csproj", "{D7E013C3-5EB1-4AF9-AB31-A6A1FDA44E90}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.Android", "Client.Android\Client.Android.csproj", "{FC443998-1F23-4A2D-AED0-86D95DDE57ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client.iOS", "Client.iOS\Client.iOS.csproj", "{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -473,6 +475,38 @@ Global
 		{FC443998-1F23-4A2D-AED0-86D95DDE57ED}.Release|x86.ActiveCfg = Release|Any CPU
 		{FC443998-1F23-4A2D-AED0-86D95DDE57ED}.Release|x86.Build.0 = Release|Any CPU
 		{FC443998-1F23-4A2D-AED0-86D95DDE57ED}.Release|x86.Deploy.0 = Release|Any CPU
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|Any CPU.ActiveCfg = Ad-Hoc|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|ARM.ActiveCfg = Ad-Hoc|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Ad-Hoc|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|iPhoneSimulator.Build.0 = Ad-Hoc|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|x64.ActiveCfg = Ad-Hoc|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Ad-Hoc|x86.ActiveCfg = Ad-Hoc|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|Any CPU.ActiveCfg = AppStore|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|ARM.ActiveCfg = AppStore|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|iPhoneSimulator.ActiveCfg = AppStore|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|iPhoneSimulator.Build.0 = AppStore|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|x64.ActiveCfg = AppStore|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.AppStore|x86.ActiveCfg = AppStore|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|Any CPU.ActiveCfg = Debug|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|ARM.ActiveCfg = Debug|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|iPhone.Build.0 = Debug|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|x64.ActiveCfg = Debug|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Debug|x86.ActiveCfg = Debug|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|Any CPU.ActiveCfg = Release|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|ARM.ActiveCfg = Release|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|iPhone.ActiveCfg = Release|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|iPhone.Build.0 = Release|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|x64.ActiveCfg = Release|iPhone
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38}.Release|x86.ActiveCfg = Release|iPhone
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -486,5 +520,6 @@ Global
 		{D182E059-C408-4EE4-81B7-01AC4B438CC5} = {4A5BCF1D-BEBF-470A-AF9F-F94AC45FA355}
 		{D7E013C3-5EB1-4AF9-AB31-A6A1FDA44E90} = {4A5BCF1D-BEBF-470A-AF9F-F94AC45FA355}
 		{FC443998-1F23-4A2D-AED0-86D95DDE57ED} = {4A5BCF1D-BEBF-470A-AF9F-F94AC45FA355}
+		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38} = {4A5BCF1D-BEBF-470A-AF9F-F94AC45FA355}
 	EndGlobalSection
 EndGlobal
