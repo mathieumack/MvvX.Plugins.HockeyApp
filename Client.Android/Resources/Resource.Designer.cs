@@ -617,6 +617,7 @@ namespace Client.Android
 			private Style()
 			{
 			}
+
 		}
 	}
 }
