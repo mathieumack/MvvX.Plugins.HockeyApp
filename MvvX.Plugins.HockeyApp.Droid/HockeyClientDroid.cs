@@ -5,6 +5,8 @@ using HockeyApp.Android.Metrics;
 using Android.App;
 using Android.Content;
 using System.Threading.Tasks;
+using HockeyApp.Android.Utils;
+using System.Linq;
 
 namespace MvvX.Plugins.HockeyApp.Droid
 {
@@ -33,10 +35,10 @@ namespace MvvX.Plugins.HockeyApp.Droid
         public void Configure(string identifier, string version, bool activateTelemetry, bool activateMetrics, bool activateCrashReports)
         {
             this.identifier = identifier;
-            if(activateCrashReports)
+            if (activateCrashReports)
                 CrashManager.Register(context, this.identifier);
             if(activateMetrics)
-                MetricsManager.Register(this.context, this.application, this.identifier);
+                MetricsManager.Register(this.application, this.identifier);
 
             isConfigured = true;
         }
@@ -45,6 +47,7 @@ namespace MvvX.Plugins.HockeyApp.Droid
         {
             throw new NotImplementedException();
         }
+
 
         public void TrackEvent(string eventName)
         {
@@ -55,9 +58,14 @@ namespace MvvX.Plugins.HockeyApp.Droid
 
         public void TrackEvent(string eventName, IDictionary<string, string> properties = null, IDictionary<string, double> metrics = null)
         {
+            IDictionary<string, Java.Lang.Double> metric = new Dictionary<string, Java.Lang.Double>();
+            foreach (var item in metrics)
+            {
+                metric.Add(item.Key, Java.Lang.Double.ValueOf(item.Value));
+            }
             // Check metrics activation :
             if (MetricsManager.IsUserMetricsEnabled)
-                MetricsManager.TrackEvent(eventName);
+                MetricsManager.TrackEvent(eventName, properties, metric);
         }
 
         public void TrackException(Exception ex, IDictionary<string, string> properties = null)
