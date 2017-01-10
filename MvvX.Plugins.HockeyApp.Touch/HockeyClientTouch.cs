@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
+using Foundation;
 using HockeyApp.iOS;
 
 namespace MvvX.Plugins.HockeyApp.Touch
@@ -8,8 +10,9 @@ namespace MvvX.Plugins.HockeyApp.Touch
     public class HockeyClientTouch : IHockeyClient
     {
         public void Configure(string identifier, string version, bool activateTelemetry, bool activateMetrics, bool activateCrashReports)
-        {
+        {            
             var manager = BITHockeyManager.SharedHockeyManager;
+            manager.LogLevel = BITLogLevel.Verbose;
             manager.Configure(identifier);
             manager.DisableCrashManager = !activateCrashReports;
             manager.DisableMetricsManager = !activateMetrics;

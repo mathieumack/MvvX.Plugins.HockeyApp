@@ -617,7 +617,9 @@ namespace Client.Android
 			private Style()
 			{
 			}
+
 		}
 	}
 }
 #pragma warning restore 1591
+
