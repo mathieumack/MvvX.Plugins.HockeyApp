@@ -22,7 +22,6 @@ namespace MvvX.Plugins.HockeyApp.Wpf
                         .UnregisterDefaultUnobservedTaskExceptionHandler();
 
                 hockeyClient.IsTelemetryInitialized = true;
-
                 var platformHelper = (HockeyPlatformHelperWPF)hockeyClient.PlatformHelper;
                 platformHelper.AppVersion = version;
             }

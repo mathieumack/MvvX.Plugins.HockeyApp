@@ -21,6 +21,7 @@ before_build:
     
     nuget restore MvvX.Plugins.HockeyApp.sln -verbosity detailed
 build:
+  project: MvvX.Plugins.HockeyApp.sln
   verbosity: minimal
 on_success:
 - ps: '& "nuspec\packageGenerator.ps1"'

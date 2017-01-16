@@ -26,5 +26,11 @@ namespace Client.Windows
         {
             throw new NotImplementedException("Custom not implemented exception.");
         }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            var exception =new NotImplementedException("Custom not implemented exception.");
+            App.hockeyClient.TrackException(exception);
+        }
     }
 }
