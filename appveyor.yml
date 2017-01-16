@@ -25,6 +25,12 @@ install:
     7z x $zipPath | Out-Null    
 
     Set-Content -path "$env:USERPROFILE\.xamarin-credentials" -value "xamarin.com,$env:XAMARIN_COOKIE"
+
+    "$env:USERPROFILE\.xamarin-credentials"
+
+    "xamarin.com,$env:XAMARIN_COOKIE"
+
+    Get-Content -path "$env:USERPROFILE\.xamarin-credentials"
 xamarin:
   email: mathieu.mack@econocom.com
   password:
