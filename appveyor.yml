@@ -35,6 +35,8 @@ before_build:
     nuget sources update -Name nuget.org -Source https://api.nuget.org/v3/index.json
     
     nuget restore MvvX.Plugins.HockeyApp.sln -verbosity detailed
+
+    xamarin-component.exe restore MvvX.Plugins.HockeyApp.sln
 build:
   project: MvvX.Plugins.HockeyApp.sln
   verbosity: minimal
