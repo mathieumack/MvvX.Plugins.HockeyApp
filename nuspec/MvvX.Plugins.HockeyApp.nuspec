@@ -24,7 +24,7 @@
                 <dependency id="HockeySDK.Core" version="4.1.5" />
                 <dependency id="HockeySDK.WPF" version="4.1.5" />
             </group>
-            <group targetFramework="monoandroid60">
+            <group targetFramework="MonoTouch10">
                 <dependency id="xamstore-hockeyappios" version="4.1.0.3" />
             </group>
         </dependencies>  
