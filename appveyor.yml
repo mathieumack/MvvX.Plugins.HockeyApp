@@ -27,7 +27,7 @@ install:
 xamarin:
   email: mathieu.mack@econocom.com
   password:
-    secure: yyVQJ+kfRDCu6D5ABvSA1g==
+    secure: kKYb0Zu1+siEpVgHALPJbA9jR00awaLD1FIwxOR/Hzs=
   android: true
   ios: true
 before_build:
