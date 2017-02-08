@@ -20,16 +20,6 @@ namespace MvvX.Plugins.HockeyApp.Wpf
                 hockeyClient.Configure(identifier)
                         .RegisterCustomDispatcherUnhandledExceptionLogic(OnUnhandledDispatcherException)
                         .UnregisterDefaultUnobservedTaskExceptionHandler();
-
-                hockeyClient.IsTelemetryInitialized = true;
-                var platformHelper = (HockeyPlatformHelperWPF)hockeyClient.PlatformHelper;
-                platformHelper.AppVersion = version;
-            }
-            else
-            {
-                var platformHelper = (HockeyPlatformHelperWPF)hockeyClient.PlatformHelper;
-                hockeyClient.PlatformHelper = platformHelper;
-                hockeyClient.AppIdentifier = identifier;
             }
 
             this.activateTelemetry = activateTelemetry;
