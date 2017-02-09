@@ -24,7 +24,6 @@
                 <dependency id="HockeySDK.WPF" version="4.1.5" />
             </group>
             <group targetFramework="MonoTouch10">
-                <dependency id="xamstore-hockeyappios" version="4.1.0.3" />
             </group>
         </dependencies>  
     </metadata>
@@ -40,14 +39,16 @@
         <file src="BootstrapContentDroid\HockeyAppPluginBootstrap.cs.pp" target="content\net45\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
         
         <!-- Android -->
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\net45" />
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\net45" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\monoandroid60" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\monoandroid60" />
         <file src="..\MvvX.Plugins.HockeyApp.Droid\bin\Release\MvvX.Plugins.HockeyApp.Droid.dll" target="lib\monoandroid60" />
         <file src="BootstrapContentDroid\HockeyAppPluginBootstrap.cs.pp" target="content\monoandroid60\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
         
         <!-- Touch -->
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\net45" />
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\net45" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\MonoTouch10" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\MonoTouch10" />
+        <file src="..\dlls\hockeyappios-4.1.0.3\lib\ios-unified\HockeySDK.dll" target="lib\MonoTouch10" />
+        <file src="..\dlls\hockeyappios-4.1.0.3\lib\ios-unified\HockeySDK.iOSBindings.dll" target="lib\MonoTouch10" />
         <file src="..\MvvX.Plugins.HockeyApp.Touch\bin\Release\MvvX.Plugins.HockeyApp.Touch.dll" target="lib\MonoTouch10" />
         <file src="BootstrapContentTouch\HockeyAppPluginBootstrap.cs.pp" target="content\MonoTouch10\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
     </files>
