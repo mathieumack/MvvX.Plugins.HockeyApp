@@ -11,6 +11,9 @@ $locationNuspec
 	
 Set-Location -Path $locationNuspec
 
+write-host "Update the nuget.exe file" -foreground "DarkGray"
+.\NuGet update -self
+
 $strPath = $location + '\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll'
 
 $VersionInfos = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($strPath)
