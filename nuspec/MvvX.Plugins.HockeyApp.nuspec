@@ -19,7 +19,7 @@
             <group targetFramework="net45">
                 <dependency id="Unofficial.HockeySDK.WPF" version="2017.0208.0401.7" />
             </group>
-            <group targetFramework="uap">
+            <group targetFramework="uap10">
                 <dependency id="HockeySDK.UWP" version="4.1.4" />
             </group>
             <group targetFramework="monoandroid60">
@@ -42,13 +42,10 @@
         <file src="BootstrapContent\HockeyAppPluginBootstrap.cs.pp" target="content\net45\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
         
         <!-- UWP -->
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\uap10.0" />        
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\Release\MvvX.Plugins.HockeyApp.WindowsUWP.dll" target="ref\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\Release\MvvX.Plugins.HockeyApp.WindowsUWPr.pri" target="ref\uap10.0" />
-
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\Release\MvvX.Plugins.HockeyApp.WindowsUWP.dll" target="lib\uap10.0" />
-        <file src="BootstrapContent\HockeyAppPluginBootstrap.cs.pp" target="content\uap10.0\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\UAP10" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\UAP10" />        
+        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\Release\MvvX.Plugins.HockeyApp.WindowsUWP.dll" target="lib\UAP10" />
+        <file src="BootstrapContent\HockeyAppPluginBootstrap.cs.pp" target="content\UAP10\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
         
         <!-- Android -->
         <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\monoandroid60" />
