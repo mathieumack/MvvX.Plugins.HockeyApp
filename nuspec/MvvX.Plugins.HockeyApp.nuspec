@@ -43,14 +43,7 @@
         
         <!-- UWP -->
         <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\ARM\Release\MvvX.Plugins.HockeyApp.WindowsUWP.dll" target="runtimes\win10-arm\lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\ARM\Release\MvvX.Plugins.HockeyApp.WindowsUWP.pdb" target="runtimes\win10-arm\lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\x64\Release\MvvX.Plugins.HockeyApp.WindowsUWP.dll" target="runtimes\win10-x64\lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\x64\Release\MvvX.Plugins.HockeyApp.WindowsUWP.pdb" target="runtimes\win10-x64\lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\x86\Release\MvvX.Plugins.HockeyApp.WindowsUWP.dll" target="runtimes\win10-x86\lib\uap10.0" />
-        <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\x86\Release\MvvX.Plugins.HockeyApp.WindowsUWP.pdb" target="runtimes\win10-x86\lib\uap10.0" />
-        
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\uap10.0" />        
         <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\Release\MvvX.Plugins.HockeyApp.WindowsUWP.dll" target="ref\uap10.0" />
         <file src="..\MvvX.Plugins.HockeyApp.WindowsUWP\bin\Release\MvvX.Plugins.HockeyApp.WindowsUWPr.pri" target="ref\uap10.0" />
 
