@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.HockeyApp;
 using System.Threading.Tasks;
+using Microsoft.HockeyApp;
+using Microsoft.HockeyApp.Model;
 
 namespace MvvX.Plugins.HockeyApp.Wpf
 {
@@ -89,6 +90,25 @@ namespace MvvX.Plugins.HockeyApp.Wpf
         public void TrackTrace(string message, SeverityLevel severityLevel, IDictionary<string, string> properties)
         {
             HockeyClient.Current.TrackTrace(message, (Microsoft.HockeyApp.SeverityLevel)(int)severityLevel, properties);
+        }
+
+        public async Task<bool> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
+        {
+            try
+            {
+                var attachments = new List<IFeedbackAttachment>();
+                foreach (var file in files)
+                {
+                    attachments.Add(new FeedbackAttachment(file.FileName, file.DataBytes, file.ContentType));
+                }
+                var thread = HockeyClient.Current.CreateFeedbackThread();
+                await thread.PostFeedbackMessageAsync(message, email, subject, name, attachments);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

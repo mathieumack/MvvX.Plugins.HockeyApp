@@ -37,7 +37,7 @@ namespace MvvX.Plugins.HockeyApp.Droid
             this.identifier = identifier;
             if (activateCrashReports)
                 CrashManager.Register(context, this.identifier);
-            if(activateMetrics)
+            if (activateMetrics)
                 MetricsManager.Register(this.application, this.identifier);
 
             isConfigured = true;
@@ -104,6 +104,11 @@ namespace MvvX.Plugins.HockeyApp.Droid
         }
 
         public async Task SendCrashesAsync()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<bool> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
         {
             throw new NotImplementedException();
         }

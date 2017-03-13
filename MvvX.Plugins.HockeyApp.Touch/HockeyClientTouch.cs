@@ -73,5 +73,10 @@ namespace MvvX.Plugins.HockeyApp.Touch
         {
             throw new NotImplementedException();
         }
+
+        public Task<bool> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
