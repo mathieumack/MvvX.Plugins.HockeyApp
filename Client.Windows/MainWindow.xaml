@@ -11,9 +11,11 @@
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
             <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
         <Button Click="Button_Click" Content="Send track event" Grid.Row="0" Margin="25" />
         <Button Click="Button3_Click" Content="Send crash application" Grid.Row="1" Margin="25" />
         <Button Click="Button2_Click" Content="Generate crash application" Grid.Row="2" Margin="25" />
+        <Button Click="Button4_Click" Content="Send feedback" Grid.Row="3" Margin="25" />
     </Grid>
 </Window>
