@@ -1,6 +1,10 @@
 ﻿using Microsoft.HockeyApp;
 using System;
 using System.Windows;
+using MvvX.Plugins.HockeyApp;
+using System.Collections.Generic;
+using System.IO;
+using MvvX.Plugins.HockeyApp.Wpf;
 
 namespace Client.Windows
 {
@@ -29,8 +33,16 @@ namespace Client.Windows
 
         private void Button3_Click(object sender, RoutedEventArgs e)
         {
-            var exception =new NotImplementedException("Custom not implemented exception.");
+            var exception = new NotImplementedException("Custom not implemented exception.");
             App.hockeyClient.TrackException(exception);
+        }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            var bytes = File.ReadAllBytes(@"C:\Users\Public\Pictures\Sample Pictures\Koala.jpg");
+            var list = new List<IHockeyAppAttachment>();
+            list.Add(new HockeyAppAttachment() { DataBytes = bytes, FileName = "Koala.jpg", ContentType = "image/jpeg" });
+            App.hockeyClient.SendFeedbackAsync("Blabla blablabla", "mathieu.mack@econocom.com", "Sujet verbe complément", "MACK, MATHIEU", list);
         }
     }
 }
