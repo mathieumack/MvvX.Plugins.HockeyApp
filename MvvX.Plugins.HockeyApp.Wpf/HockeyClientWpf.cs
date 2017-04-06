@@ -92,7 +92,7 @@ namespace MvvX.Plugins.HockeyApp.Wpf
             HockeyClient.Current.TrackTrace(message, (Microsoft.HockeyApp.SeverityLevel)(int)severityLevel, properties);
         }
 
-        public async Task<bool> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
+        public async Task<IHockeyAppThread> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
         {
             try
             {
@@ -103,11 +103,12 @@ namespace MvvX.Plugins.HockeyApp.Wpf
                 }
                 var thread = HockeyClient.Current.CreateFeedbackThread();
                 await thread.PostFeedbackMessageAsync(message, email, subject, name, attachments);
-                return true;
+                thread = await HockeyClient.Current.OpenFeedbackThreadAsync(thread.Token);
+                return new HockeyAppThread(thread);                    
             }
             catch
             {
-                return false;
+                return null;
             }
         }
     }

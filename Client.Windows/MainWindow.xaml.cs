@@ -37,12 +37,12 @@ namespace Client.Windows
             App.hockeyClient.TrackException(exception);
         }
 
-        private void Button4_Click(object sender, RoutedEventArgs e)
+        private async void Button4_Click(object sender, RoutedEventArgs e)
         {
             var bytes = File.ReadAllBytes(@"C:\Users\Public\Pictures\Sample Pictures\Koala.jpg");
             var list = new List<IHockeyAppAttachment>();
             list.Add(new HockeyAppAttachment() { DataBytes = bytes, FileName = "Koala.jpg", ContentType = "image/jpeg" });
-            App.hockeyClient.SendFeedbackAsync("Blabla blablabla", "mathieu.mack@econocom.com", "Sujet verbe complément", "MACK, MATHIEU", list);
+            var result = await App.hockeyClient.SendFeedbackAsync("Description", "mail@domain.com", "Sujet", "Nom", list);
         }
     }
 }
