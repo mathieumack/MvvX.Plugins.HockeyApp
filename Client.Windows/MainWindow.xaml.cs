@@ -1,4 +1,4 @@
-﻿using Microsoft.HockeyApp;
+using Microsoft.HockeyApp;
 using System;
 using System.Windows;
 using MvvX.Plugins.HockeyApp;
