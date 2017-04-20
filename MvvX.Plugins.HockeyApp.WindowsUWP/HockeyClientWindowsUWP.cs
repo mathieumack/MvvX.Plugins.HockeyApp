@@ -75,7 +75,7 @@ namespace MvvX.Plugins.HockeyApp.WindowsUWP
             throw new NotImplementedException();
         }
 
-        public Task<bool> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
+        public Task<IHockeyAppThread> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
         {
             throw new NotImplementedException();
         }
