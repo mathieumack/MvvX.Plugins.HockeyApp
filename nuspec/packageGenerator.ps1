@@ -22,18 +22,18 @@ write-host "Product version : " $ProductVersion -foreground "Green"
 
 write-host "Packaging to nuget..." -foreground "Magenta"
 
-write-host "Update nuspec versions" -foreground "Green"
+#write-host "Update nuspec versions" -foreground "Green"
 
-write-host "Update nuspec versions MvvX.Plugins.HockeyApp.nuspec" -foreground "DarkGray"
-$nuSpecFile =  $locationNuspec + '\MvvX.Plugins.HockeyApp.nuspec'
-(Get-Content $nuSpecFile) | 
-Foreach-Object {$_ -replace "{BuildNumberVersion}", "$ProductVersion" } | 
-Set-Content $nuSpecFile
+#write-host "Update nuspec versions MvvX.Plugins.HockeyApp.nuspec" -foreground "DarkGray"
+#$nuSpecFile =  $locationNuspec + '\MvvX.Plugins.HockeyApp.nuspec'
+#(Get-Content $nuSpecFile) | 
+#Foreach-Object {$_ -replace "{BuildNumberVersion}", "$ProductVersion" } | 
+#Set-Content $nuSpecFile
 
 write-host "Generate nuget packages" -foreground "Green"
 
 write-host "Generate nuget package for MvvX.Plugins.HockeyApp.nuspec" -foreground "DarkGray"
-.\NuGet.exe pack MvvX.Plugins.HockeyApp.nuspec
+.\NuGet.exe pack MvvX.Plugins.HockeyApp.nuspec -Version $ProductVersion
 
 $apiKey = $env:NuGetApiKey
 	
