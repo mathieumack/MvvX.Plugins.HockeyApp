@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="IHockeyAppAttachment.cs" />
+    <Compile Include="IHockeyAppThread.cs" />
     <Compile Include="IHockeyClient.cs" />
     <Compile Include="PluginLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
