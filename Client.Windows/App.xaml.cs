@@ -20,7 +20,7 @@ namespace Client.Windows
         {
             base.OnStartup(e);
             App.hockeyClient = new HockeyClientWpf();
-            App.hockeyClient.Configure("SetApiKeyHere", "1.0.0.0", true, true, true);
+            App.hockeyClient.Configure("4fb69a0e-d187-4d09-ae6c-4a9a7594d572", "1.0.0.0", true, true, true);
             
             App.hockeyClient.TrackEvent("Start application from HockeyApp");
 

@@ -5,6 +5,7 @@ using MvvX.Plugins.HockeyApp;
 using System.Collections.Generic;
 using System.IO;
 using MvvX.Plugins.HockeyApp.Wpf;
+using System.Linq;
 
 namespace Client.Windows
 {
@@ -40,9 +41,11 @@ namespace Client.Windows
         private async void Button4_Click(object sender, RoutedEventArgs e)
         {
             var bytes = File.ReadAllBytes(@"C:\Users\Public\Pictures\Sample Pictures\Koala.jpg");
-            var list = new List<IHockeyAppAttachment>();
+            IList<HockeyAppAttachment> list = new List<HockeyAppAttachment>();
             list.Add(new HockeyAppAttachment() { DataBytes = bytes, FileName = "Koala.jpg", ContentType = "image/jpeg" });
-            var result = await App.hockeyClient.SendFeedbackAsync("Description", "mail@domain.com", "Sujet", "Nom", list);
+
+            var result = await App.hockeyClient.TrySendFeedbackAsync("Description", "mail@domain.com", "Sujet", "Nom", list.ToList<IHockeyAppAttachment>());
         }
     }
 }
+

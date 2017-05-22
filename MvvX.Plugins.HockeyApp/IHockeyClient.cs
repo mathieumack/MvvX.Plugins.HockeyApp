@@ -34,6 +34,7 @@ namespace MvvX.Plugins.HockeyApp
         void TrackTrace(string message, IDictionary<string, string> properties);
         void TrackTrace(string message, SeverityLevel severityLevel, IDictionary<string, string> properties);
         Task<IHockeyAppThread> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files);
+        Task<IHockeyAppThread> TrySendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files);
     }
 }
 
