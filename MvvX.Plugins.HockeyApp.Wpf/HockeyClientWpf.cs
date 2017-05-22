@@ -92,24 +92,29 @@ namespace MvvX.Plugins.HockeyApp.Wpf
             HockeyClient.Current.TrackTrace(message, (Microsoft.HockeyApp.SeverityLevel)(int)severityLevel, properties);
         }
 
-        public async Task<IHockeyAppThread> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
+        public async Task<IHockeyAppThread> TrySendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
         {
             try
             {
-                var attachments = new List<IFeedbackAttachment>();
-                foreach (var file in files)
-                {
-                    attachments.Add(new FeedbackAttachment(file.FileName, file.DataBytes, file.ContentType));
-                }
-                var thread = HockeyClient.Current.CreateFeedbackThread();
-                await thread.PostFeedbackMessageAsync(message, email, subject, name, attachments);
-                thread = await HockeyClient.Current.OpenFeedbackThreadAsync(thread.Token);
-                return new HockeyAppThread(thread);                    
+                return await SendFeedbackAsync(message, email, subject, name, files);
             }
-            catch
+            catch (Exception e)
             {
                 return null;
             }
+        }
+
+        public async Task<IHockeyAppThread> SendFeedbackAsync(string message, string email, string subject, string name, IList<IHockeyAppAttachment> files)
+        {
+            var attachments = new List<IFeedbackAttachment>();
+            foreach (var file in files)
+            {
+                attachments.Add(new FeedbackAttachment(file.FileName, file.DataBytes, file.ContentType));
+            }
+            var thread = HockeyClient.Current.CreateFeedbackThread();
+            var feedbackMessage = await thread.PostFeedbackMessageAsync(message, email, subject, name, attachments);
+            thread = await HockeyClient.Current.OpenFeedbackThreadAsync(thread.Token);
+            return new HockeyAppThread(thread);
         }
     }
 }
