@@ -1,8 +1,15 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/qoqollxlhlus880l?svg=true)](https://ci.appveyor.com/project/mathieumack/mvvx-plugins-hockeyapp)
-
 # MvvX.HockeyApp
+
 Use HockeyApp SDK on a MvvmCross application.
 =========
+
+## Build 
+
+[![Build status](https://ci.appveyor.com/api/projects/status/qoqollxlhlus880l?svg=true)](https://ci.appveyor.com/project/mathieumack/mvvx-plugins-hockeyapp)
+
+## Nuget
+
+[![NuGet package](https://buildstats.info/nuget/MvvX.Plugins.HockeyApp?includePreReleases=true)](https://nuget.org/packages/MvvX.Plugins.HockeyApp)
 
 The SDK for the http://www.hockeyapp.com for application that use https://mvvmcross.com/.
 
