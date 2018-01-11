@@ -30,12 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.HockeyApp.Core45, Version=2017.10522.11512.13, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.HockeySDK.Core.2017.10522.11512.13\lib\portable-net45+win8+wp8+wpa81+win81+uap10.0\Microsoft.HockeyApp.Core45.dll</HintPath>
+    <Reference Include="Microsoft.HockeyApp.Core45, Version=2018.10111.11658.16, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.HockeySDK.Core.2018.10111.11658.16\lib\portable-net45+win8+wp8+wpa81+win81+uap10.0\Microsoft.HockeyApp.Core45.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.HockeyApp.Kit, Version=2017.10522.10819.12, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Unofficial.HockeySDK.WPF.2017.10522.10819.12\lib\net45\Microsoft.HockeyApp.Kit.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Microsoft.HockeyApp.Kit, Version=2018.10111.11658.16, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unofficial.HockeySDK.WPF.2018.10111.11658.16\lib\net45\Microsoft.HockeyApp.Kit.dll</HintPath>
     </Reference>
     <Reference Include="MvvmCross.Platform, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmCross.Platform.4.2.2\lib\net45\MvvmCross.Platform.dll</HintPath>

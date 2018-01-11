@@ -17,7 +17,7 @@
                 <dependency id="MvvmCross.Platform" version="4.2.2" />
             </group>
             <group targetFramework="net45">
-                <dependency id="Unofficial.HockeySDK.WPF" version="2017.0208.0401.7" />
+                <dependency id="Unofficial.HockeySDK.WPF" version="2018.10111.11658.16" />
             </group>
             <group targetFramework="uap10">
                 <dependency id="HockeySDK.UWP" version="4.1.4" />
