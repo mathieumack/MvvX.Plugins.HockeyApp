@@ -40,35 +40,35 @@ namespace MvvX.Plugins.HockeyApp.Droid
 		public partial class Color
 		{
 			
-			// aapt resource value: 0x7f060000
-			public static int hockeyapp_background_header = 2131099648;
+			// aapt resource value: 0x7f050000
+			public static int hockeyapp_background_header = 2131034112;
 			
-			// aapt resource value: 0x7f060001
-			public static int hockeyapp_background_light = 2131099649;
+			// aapt resource value: 0x7f050001
+			public static int hockeyapp_background_light = 2131034113;
 			
-			// aapt resource value: 0x7f060002
-			public static int hockeyapp_background_white = 2131099650;
+			// aapt resource value: 0x7f050002
+			public static int hockeyapp_background_white = 2131034114;
 			
-			// aapt resource value: 0x7f060003
-			public static int hockeyapp_button_background = 2131099651;
+			// aapt resource value: 0x7f050003
+			public static int hockeyapp_button_background = 2131034115;
 			
-			// aapt resource value: 0x7f060004
-			public static int hockeyapp_button_background_pressed = 2131099652;
+			// aapt resource value: 0x7f050004
+			public static int hockeyapp_button_background_pressed = 2131034116;
 			
-			// aapt resource value: 0x7f060005
-			public static int hockeyapp_button_background_selected = 2131099653;
+			// aapt resource value: 0x7f050005
+			public static int hockeyapp_button_background_selected = 2131034117;
 			
-			// aapt resource value: 0x7f060006
-			public static int hockeyapp_text_black = 2131099654;
+			// aapt resource value: 0x7f050006
+			public static int hockeyapp_text_black = 2131034118;
 			
-			// aapt resource value: 0x7f060007
-			public static int hockeyapp_text_light = 2131099655;
+			// aapt resource value: 0x7f050007
+			public static int hockeyapp_text_light = 2131034119;
 			
-			// aapt resource value: 0x7f060008
-			public static int hockeyapp_text_normal = 2131099656;
+			// aapt resource value: 0x7f050008
+			public static int hockeyapp_text_normal = 2131034120;
 			
-			// aapt resource value: 0x7f060009
-			public static int hockeyapp_text_white = 2131099657;
+			// aapt resource value: 0x7f050009
+			public static int hockeyapp_text_white = 2131034121;
 			
 			static Color()
 			{
@@ -206,13 +206,10 @@ namespace MvvX.Plugins.HockeyApp.Droid
 			public static int hockeyapp_activity_login = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public static int hockeyapp_activity_update = 2130903043;
+			public static int hockeyapp_fragment_update = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public static int hockeyapp_fragment_update = 2130903044;
-			
-			// aapt resource value: 0x7f030005
-			public static int hockeyapp_view_feedback_message = 2130903045;
+			public static int hockeyapp_view_feedback_message = 2130903044;
 			
 			static Layout()
 			{
@@ -227,11 +224,11 @@ namespace MvvX.Plugins.HockeyApp.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040049
-			public static int ApplicationName = 2130968649;
+			// aapt resource value: 0x7f040058
+			public static int ApplicationName = 2130968664;
 			
-			// aapt resource value: 0x7f040048
-			public static int Hello = 2130968648;
+			// aapt resource value: 0x7f040057
+			public static int Hello = 2130968663;
 			
 			// aapt resource value: 0x7f040001
 			public static int hockeyapp_crash_dialog_app_name_fallback = 2130968577;
@@ -258,193 +255,238 @@ namespace MvvX.Plugins.HockeyApp.Droid
 			public static int hockeyapp_dialog_error_title = 2130968584;
 			
 			// aapt resource value: 0x7f040009
-			public static int hockeyapp_dialog_negative_button = 2130968585;
+			public static int hockeyapp_dialog_positive_button = 2130968585;
 			
 			// aapt resource value: 0x7f04000a
-			public static int hockeyapp_dialog_positive_button = 2130968586;
+			public static int hockeyapp_download_failed_dialog_message = 2130968586;
 			
 			// aapt resource value: 0x7f04000b
-			public static int hockeyapp_download_failed_dialog_message = 2130968587;
+			public static int hockeyapp_download_failed_dialog_negative_button = 2130968587;
 			
 			// aapt resource value: 0x7f04000c
-			public static int hockeyapp_download_failed_dialog_negative_button = 2130968588;
+			public static int hockeyapp_download_failed_dialog_positive_button = 2130968588;
 			
 			// aapt resource value: 0x7f04000d
-			public static int hockeyapp_download_failed_dialog_positive_button = 2130968589;
+			public static int hockeyapp_download_failed_dialog_title = 2130968589;
 			
 			// aapt resource value: 0x7f04000e
-			public static int hockeyapp_download_failed_dialog_title = 2130968590;
+			public static int hockeyapp_error_install_form_unknown_sources_disabled = 2130968590;
 			
 			// aapt resource value: 0x7f04000f
-			public static int hockeyapp_error_no_network_message = 2130968591;
+			public static int hockeyapp_error_no_external_storage_permission = 2130968591;
 			
 			// aapt resource value: 0x7f040010
-			public static int hockeyapp_expiry_info_text = 2130968592;
+			public static int hockeyapp_error_no_network_message = 2130968592;
 			
 			// aapt resource value: 0x7f040011
-			public static int hockeyapp_expiry_info_title = 2130968593;
+			public static int hockeyapp_expiry_info_text = 2130968593;
 			
 			// aapt resource value: 0x7f040012
-			public static int hockeyapp_feedback_attach_file = 2130968594;
+			public static int hockeyapp_expiry_info_title = 2130968594;
 			
 			// aapt resource value: 0x7f040013
-			public static int hockeyapp_feedback_attach_picture = 2130968595;
+			public static int hockeyapp_feedback_attach_file = 2130968595;
 			
 			// aapt resource value: 0x7f040014
-			public static int hockeyapp_feedback_attachment_button_text = 2130968596;
+			public static int hockeyapp_feedback_attach_picture = 2130968596;
 			
 			// aapt resource value: 0x7f040015
-			public static int hockeyapp_feedback_attachment_error = 2130968597;
+			public static int hockeyapp_feedback_attachment_added = 2130968597;
 			
 			// aapt resource value: 0x7f040016
-			public static int hockeyapp_feedback_attachment_loading = 2130968598;
+			public static int hockeyapp_feedback_attachment_button_text = 2130968598;
 			
 			// aapt resource value: 0x7f040017
-			public static int hockeyapp_feedback_email_hint = 2130968599;
+			public static int hockeyapp_feedback_attachment_error = 2130968599;
 			
 			// aapt resource value: 0x7f040018
-			public static int hockeyapp_feedback_failed_text = 2130968600;
+			public static int hockeyapp_feedback_attachment_loading = 2130968600;
 			
 			// aapt resource value: 0x7f040019
-			public static int hockeyapp_feedback_failed_title = 2130968601;
+			public static int hockeyapp_feedback_attachment_remove_description = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public static int hockeyapp_feedback_fetching_feedback_text = 2130968602;
+			public static int hockeyapp_feedback_attachment_removed = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public static int hockeyapp_feedback_generic_error = 2130968603;
+			public static int hockeyapp_feedback_email_hint = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public static int hockeyapp_feedback_last_updated_text = 2130968604;
+			public static int hockeyapp_feedback_email_hint_required = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public static int hockeyapp_feedback_max_attachments_allowed = 2130968605;
+			public static int hockeyapp_feedback_fetching_feedback_text = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public static int hockeyapp_feedback_message_hint = 2130968606;
+			public static int hockeyapp_feedback_last_updated_text = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public static int hockeyapp_feedback_name_hint = 2130968607;
+			public static int hockeyapp_feedback_max_attachments_allowed = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public static int hockeyapp_feedback_refresh_button_text = 2130968608;
+			public static int hockeyapp_feedback_message_hint = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public static int hockeyapp_feedback_response_button_text = 2130968609;
+			public static int hockeyapp_feedback_message_hint_required = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public static int hockeyapp_feedback_select_file = 2130968610;
+			public static int hockeyapp_feedback_name_hint = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public static int hockeyapp_feedback_select_picture = 2130968611;
+			public static int hockeyapp_feedback_name_hint_required = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public static int hockeyapp_feedback_send_button_text = 2130968612;
+			public static int hockeyapp_feedback_new_answer_notification_message = 2130968612;
+			
+			// aapt resource value: 0x7f040055
+			public static int hockeyapp_feedback_notification_channel = 2130968661;
 			
 			// aapt resource value: 0x7f040025
-			public static int hockeyapp_feedback_send_generic_error = 2130968613;
+			public static int hockeyapp_feedback_notification_title = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public static int hockeyapp_feedback_send_network_error = 2130968614;
+			public static int hockeyapp_feedback_refresh_button_text = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public static int hockeyapp_feedback_sending_feedback_text = 2130968615;
+			public static int hockeyapp_feedback_response_button_text = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public static int hockeyapp_feedback_subject_hint = 2130968616;
+			public static int hockeyapp_feedback_screenshot_fail = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public static int hockeyapp_feedback_title = 2130968617;
+			public static int hockeyapp_feedback_screenshot_notification_message = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public static int hockeyapp_feedback_validate_email_empty = 2130968618;
+			public static int hockeyapp_feedback_select_file = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public static int hockeyapp_feedback_validate_email_error = 2130968619;
+			public static int hockeyapp_feedback_select_picture = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public static int hockeyapp_feedback_validate_name_error = 2130968620;
+			public static int hockeyapp_feedback_send_button_text = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public static int hockeyapp_feedback_validate_subject_error = 2130968621;
+			public static int hockeyapp_feedback_send_generic_error = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public static int hockeyapp_feedback_validate_text_error = 2130968622;
+			public static int hockeyapp_feedback_send_network_error = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public static int hockeyapp_login_email_hint = 2130968623;
+			public static int hockeyapp_feedback_sending_feedback_text = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public static int hockeyapp_login_headline_text = 2130968624;
+			public static int hockeyapp_feedback_sent_toast = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public static int hockeyapp_login_headline_text_email_only = 2130968625;
+			public static int hockeyapp_feedback_subject_hint = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public static int hockeyapp_login_login_button_text = 2130968626;
+			public static int hockeyapp_feedback_subject_hint_required = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public static int hockeyapp_login_missing_credentials_toast = 2130968627;
+			public static int hockeyapp_feedback_title = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public static int hockeyapp_login_password_hint = 2130968628;
+			public static int hockeyapp_feedback_validate_email_empty = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public static int hockeyapp_paint_dialog_message = 2130968629;
+			public static int hockeyapp_feedback_validate_email_error = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public static int hockeyapp_paint_dialog_negative_button = 2130968630;
+			public static int hockeyapp_feedback_validate_name_error = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public static int hockeyapp_paint_dialog_neutral_button = 2130968631;
+			public static int hockeyapp_feedback_validate_subject_error = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public static int hockeyapp_paint_dialog_positive_button = 2130968632;
+			public static int hockeyapp_feedback_validate_text_error = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public static int hockeyapp_paint_indicator_toast = 2130968633;
+			public static int hockeyapp_login_email_hint_required = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public static int hockeyapp_paint_menu_clear = 2130968634;
+			public static int hockeyapp_login_headline_text = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public static int hockeyapp_paint_menu_save = 2130968635;
+			public static int hockeyapp_login_headline_text_email_only = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public static int hockeyapp_paint_menu_undo = 2130968636;
+			public static int hockeyapp_login_login_button_text = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public static int hockeyapp_permission_dialog_negative_button = 2130968637;
+			public static int hockeyapp_login_missing_credentials_toast = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public static int hockeyapp_permission_dialog_positive_button = 2130968638;
+			public static int hockeyapp_login_password_hint_required = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public static int hockeyapp_permission_update_message = 2130968639;
+			public static int hockeyapp_paint_dialog_message = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public static int hockeyapp_permission_update_title = 2130968640;
+			public static int hockeyapp_paint_dialog_negative_button = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public static int hockeyapp_update_button = 2130968641;
+			public static int hockeyapp_paint_dialog_neutral_button = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public static int hockeyapp_update_dialog_message = 2130968642;
+			public static int hockeyapp_paint_dialog_positive_button = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public static int hockeyapp_update_dialog_negative_button = 2130968643;
+			public static int hockeyapp_paint_indicator_toast = 2130968643;
 			
 			// aapt resource value: 0x7f040044
-			public static int hockeyapp_update_dialog_positive_button = 2130968644;
+			public static int hockeyapp_paint_menu_clear = 2130968644;
 			
 			// aapt resource value: 0x7f040045
-			public static int hockeyapp_update_dialog_title = 2130968645;
+			public static int hockeyapp_paint_menu_save = 2130968645;
 			
 			// aapt resource value: 0x7f040046
-			public static int hockeyapp_update_mandatory_toast = 2130968646;
+			public static int hockeyapp_paint_menu_undo = 2130968646;
 			
 			// aapt resource value: 0x7f040047
-			public static int hockeyapp_update_version_details_label = 2130968647;
+			public static int hockeyapp_update_already_installed = 2130968647;
+			
+			// aapt resource value: 0x7f040048
+			public static int hockeyapp_update_button = 2130968648;
+			
+			// aapt resource value: 0x7f040049
+			public static int hockeyapp_update_dialog_message = 2130968649;
+			
+			// aapt resource value: 0x7f04004a
+			public static int hockeyapp_update_dialog_negative_button = 2130968650;
+			
+			// aapt resource value: 0x7f04004b
+			public static int hockeyapp_update_dialog_positive_button = 2130968651;
+			
+			// aapt resource value: 0x7f04004c
+			public static int hockeyapp_update_dialog_title = 2130968652;
+			
+			// aapt resource value: 0x7f04004d
+			public static int hockeyapp_update_loading = 2130968653;
+			
+			// aapt resource value: 0x7f04004e
+			public static int hockeyapp_update_mandatory_toast = 2130968654;
+			
+			// aapt resource value: 0x7f04004f
+			public static int hockeyapp_update_newest_version = 2130968655;
+			
+			// aapt resource value: 0x7f040050
+			public static int hockeyapp_update_no_info = 2130968656;
+			
+			// aapt resource value: 0x7f040051
+			public static int hockeyapp_update_restore = 2130968657;
+			
+			// aapt resource value: 0x7f040052
+			public static int hockeyapp_update_title = 2130968658;
+			
+			// aapt resource value: 0x7f040053
+			public static int hockeyapp_update_unknown_size = 2130968659;
+			
+			// aapt resource value: 0x7f040054
+			public static int hockeyapp_update_version = 2130968660;
+			
+			// aapt resource value: 0x7f040056
+			public static int hockeyapp_update_version_details_label = 2130968662;
 			
 			// aapt resource value: 0x7f040000
 			public static int library_name = 2130968576;
@@ -462,14 +504,14 @@ namespace MvvX.Plugins.HockeyApp.Droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f050000
-			public static int HockeyApp_ButtonStyle = 2131034112;
+			// aapt resource value: 0x7f060000
+			public static int HockeyApp_ButtonStyle = 2131099648;
 			
-			// aapt resource value: 0x7f050001
-			public static int HockeyApp_EditTextStyle = 2131034113;
+			// aapt resource value: 0x7f060001
+			public static int HockeyApp_EditTextStyle = 2131099649;
 			
-			// aapt resource value: 0x7f050002
-			public static int HockeyApp_SingleLineInputStyle = 2131034114;
+			// aapt resource value: 0x7f060002
+			public static int HockeyApp_SingleLineInputStyle = 2131099650;
 			
 			static Style()
 			{

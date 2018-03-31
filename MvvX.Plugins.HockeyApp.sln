@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvvX.Plugins.HockeyApp", "MvvX.Plugins.HockeyApp\MvvX.Plugins.HockeyApp.csproj", "{2C13C7C5-AFF2-4DCF-B636-9A24E925ACA7}"
 EndProject
@@ -508,5 +508,8 @@ Global
 		{D7E013C3-5EB1-4AF9-AB31-A6A1FDA44E90} = {4A5BCF1D-BEBF-470A-AF9F-F94AC45FA355}
 		{FC443998-1F23-4A2D-AED0-86D95DDE57ED} = {4A5BCF1D-BEBF-470A-AF9F-F94AC45FA355}
 		{E5079E64-A1E3-4A1E-BFA8-2AD17AF98A38} = {4A5BCF1D-BEBF-470A-AF9F-F94AC45FA355}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A1E472E-A7AC-4BCB-9FEE-1C278D0C9248}
 	EndGlobalSection
 EndGlobal
