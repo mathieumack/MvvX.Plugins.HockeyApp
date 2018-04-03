@@ -1,4 +1,5 @@
 ﻿using MvvmCross.Platform;
+using MvvmCross.Platform.Droid.Platform;
 using MvvmCross.Platform.Plugins;
 
 namespace MvvX.Plugins.HockeyApp.Droid
@@ -7,7 +8,8 @@ namespace MvvX.Plugins.HockeyApp.Droid
     {
         public void Load()
         {
-            Mvx.RegisterSingleton<IHockeyClient>(new HockeyClientDroid(null, null));
+            var activity = Mvx.Resolve<IMvxAndroidCurrentTopActivity>();
+            Mvx.RegisterSingleton<IHockeyClient>(new HockeyClientDroid(activity.Activity.ApplicationContext, activity.Activity.Application));
         }
     }
 }

@@ -36,7 +36,7 @@ namespace Client.Android
         {
             base.OnStart();
             hockeyClient = new HockeyClientDroid(this, this.Application);
-            hockeyClient.Configure("$APPId", "1.0", true, true, true);
+            hockeyClient.Configure("dfefa741361a465893ca8e5b3ce1f1a8", "1.0", true, true, true);
 
             hockeyClient.TrackEvent("Start application from HockeyApp");
 
