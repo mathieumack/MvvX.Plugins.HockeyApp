@@ -55,11 +55,11 @@
         <file src="BootstrapContent\HockeyAppPluginBootstrap.cs.pp" target="content\MonoAndroid\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
         
         <!-- Touch -->
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\MonoTouch10" />
-        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\MonoTouch10" />
-        <file src="..\dlls\hockeyappios-4.1.0.3\lib\ios-unified\HockeySDK.dll" target="lib\MonoTouch10" />
-        <file src="..\dlls\hockeyappios-4.1.0.3\lib\ios-unified\HockeySDK.iOSBindings.dll" target="lib\MonoTouch10" />
-        <file src="..\MvvX.Plugins.HockeyApp.Touch\bin\Release\MvvX.Plugins.HockeyApp.Touch.dll" target="lib\MonoTouch10" />
-        <file src="BootstrapContentTouch\HockeyAppPluginBootstrap.cs.pp" target="content\MonoTouch10\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.XML" target="lib\Xamarin.iOS10" />
+        <file src="..\MvvX.Plugins.HockeyApp\bin\Release\MvvX.Plugins.HockeyApp.dll" target="lib\Xamarin.iOS10" />
+        <file src="..\dlls\hockeyappios-4.1.0.3\lib\ios-unified\HockeySDK.dll" target="lib\Xamarin.iOS10" />
+        <file src="..\dlls\hockeyappios-4.1.0.3\lib\ios-unified\HockeySDK.iOSBindings.dll" target="lib\Xamarin.iOS10" />
+        <file src="..\MvvX.Plugins.HockeyApp.Touch\bin\Release\MvvX.Plugins.HockeyApp.Touch.dll" target="lib\Xamarin.iOS10" />
+        <file src="BootstrapContentTouch\HockeyAppPluginBootstrap.cs.pp" target="content\Xamarin.iOS10\Bootstrap\HockeyAppPluginBootstrap.cs.pp" />
     </files>
 </package>
